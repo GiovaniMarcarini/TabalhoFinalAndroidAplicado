@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity() {
             override fun onNothingSelected(parentView: AdapterView<*>) {
             }
         }
+
         etData.setOnClickListener {
             val calendar = Calendar.getInstance()
             val year = calendar.get(Calendar.YEAR)
