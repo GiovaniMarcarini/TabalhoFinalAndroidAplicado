@@ -113,9 +113,7 @@ class MainActivity : AppCompatActivity() {
              etData.setText("")
             etValor.setText("")
         }
-
     }
-
     fun onClickVerLancamentos(view: View) {
         val intent = Intent(this, LancamentosActivity::class.java)
         startActivity(intent)
@@ -123,7 +121,6 @@ class MainActivity : AppCompatActivity() {
     fun onClickSaldo(view: View) {
         showSaldoDialog()
     }
-
     fun showSaldoDialog() {
         val saldo = banco.getSaldo()
         val saldoStr = String.format("%.2f", saldo)
